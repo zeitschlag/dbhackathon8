@@ -13,6 +13,10 @@
 		D8DEE9171FE45C8A00EC8130 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8DEE9161FE45C8A00EC8130 /* Assets.xcassets */; };
 		D8DEE91A1FE45C8A00EC8130 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8DEE9181FE45C8A00EC8130 /* LaunchScreen.storyboard */; };
 		D8DEE9251FE45C8A00EC8130 /* WagenreihungsplanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEE9241FE45C8A00EC8130 /* WagenreihungsplanTests.swift */; };
+		D8DEE9321FE4817F00EC8130 /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEE9311FE4817F00EC8130 /* Station.swift */; };
+		D8DEE9351FE481B400EC8130 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEE9341FE481B400EC8130 /* Track.swift */; };
+		D8DEE9371FE481BD00EC8130 /* Train.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEE9361FE481BD00EC8130 /* Train.swift */; };
+		D8DEE9391FE4821800EC8130 /* Waggon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DEE9381FE4821800EC8130 /* Waggon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		D8DEE9201FE45C8A00EC8130 /* WagenreihungsplanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WagenreihungsplanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8DEE9241FE45C8A00EC8130 /* WagenreihungsplanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WagenreihungsplanTests.swift; sourceTree = "<group>"; };
 		D8DEE9261FE45C8A00EC8130 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8DEE9311FE4817F00EC8130 /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		D8DEE9341FE481B400EC8130 /* Track.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		D8DEE9361FE481BD00EC8130 /* Train.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Train.swift; sourceTree = "<group>"; };
+		D8DEE9381FE4821800EC8130 /* Waggon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Waggon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,7 @@
 		D8DEE90E1FE45C8A00EC8130 /* Wagenreihungsplan */ = {
 			isa = PBXGroup;
 			children = (
+				D8DEE92F1FE4806400EC8130 /* Data Layer */,
 				D8DEE90F1FE45C8A00EC8130 /* AppDelegate.swift */,
 				D8DEE9111FE45C8A00EC8130 /* ViewController.swift */,
 				D8DEE9131FE45C8A00EC8130 /* Main.storyboard */,
@@ -94,6 +103,25 @@
 				D8DEE9261FE45C8A00EC8130 /* Info.plist */,
 			);
 			path = WagenreihungsplanTests;
+			sourceTree = "<group>";
+		};
+		D8DEE92F1FE4806400EC8130 /* Data Layer */ = {
+			isa = PBXGroup;
+			children = (
+				D8DEE9301FE4806A00EC8130 /* Model */,
+			);
+			path = "Data Layer";
+			sourceTree = "<group>";
+		};
+		D8DEE9301FE4806A00EC8130 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D8DEE9311FE4817F00EC8130 /* Station.swift */,
+				D8DEE9341FE481B400EC8130 /* Track.swift */,
+				D8DEE9361FE481BD00EC8130 /* Train.swift */,
+				D8DEE9381FE4821800EC8130 /* Waggon.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +228,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8DEE9121FE45C8A00EC8130 /* ViewController.swift in Sources */,
+				D8DEE9321FE4817F00EC8130 /* Station.swift in Sources */,
 				D8DEE9101FE45C8A00EC8130 /* AppDelegate.swift in Sources */,
+				D8DEE9371FE481BD00EC8130 /* Train.swift in Sources */,
+				D8DEE9391FE4821800EC8130 /* Waggon.swift in Sources */,
+				D8DEE9351FE481B400EC8130 /* Track.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
