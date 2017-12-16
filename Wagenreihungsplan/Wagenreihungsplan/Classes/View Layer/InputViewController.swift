@@ -40,6 +40,8 @@ class InputViewController: UIViewController {
         trainNumberTextfield.delegate = self
         trainNumberTextfield.backgroundColor = Branding.Colors.DBGrey
         trainNumberTextfield.layer.cornerRadius = 10.0
+        trainNumberTextfield.layoutMargins = UIEdgeInsetsMake(0.0, 5.0, 0.0, 5.0)
+        trainNumberTextfield.textAlignment = .center
         
         trainStationLabel.text = NSLocalizedString("Train Station", comment: "")
         trainStationLabel.textColor = Branding.Colors.DBBlue
@@ -64,6 +66,8 @@ class InputViewController: UIViewController {
         reservationNumberTextfield.delegate = self
         reservationNumberTextfield.backgroundColor = Branding.Colors.DBGrey
         reservationNumberTextfield.layer.cornerRadius = 10.0
+        reservationNumberTextfield.layoutMargins = UIEdgeInsetsMake(0.0, 5.0, 0.0, 5.0)
+        reservationNumberTextfield.textAlignment = .center
         
         doneButton.setTitle(NSLocalizedString("OK", comment: ""), for: .normal)
         doneButton.layer.borderColor = Branding.Colors.DBBlue.cgColor
@@ -97,10 +101,17 @@ class InputViewController: UIViewController {
     @IBAction func doneButtonTapped(_ sender: Any) {
         
         //TODO: Add validation
-        guard let unrappedTrainNumber = self.userInput.trainNumber, let trainNumber = Int(unrappedTrainNumber) else { return }
+        //TODO: Move this away from the view controller
+        guard let unrappedTrainNumber = self.trainNumberTextfield.text, let trainNumber = Int(unrappedTrainNumber) else { return }
         guard let station = self.userInput.station else { return }
         
-        if let result = DataManager.shared.getResult(withStation: station, trainNumber: trainNumber, waggonNumber: self.userInput.waggonNumber) {
+        var waggonNumber: Int?
+        
+        if let waggonNumberInput = self.reservationNumberTextfield.text {
+            waggonNumber = Int(waggonNumberInput)
+        }
+        
+        if let result = DataManager.shared.getResult(withStation: station, trainNumber: trainNumber, waggonNumber: waggonNumber) {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
             
             guard let resultViewController = mainStoryboard.instantiateViewController(withIdentifier: "ResultViewController") as? ResultViewController else {
