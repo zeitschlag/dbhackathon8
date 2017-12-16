@@ -35,6 +35,7 @@ class InputViewController: UIViewController {
         
         trainNumberLabel.text = NSLocalizedString("Train Number", comment: "")
         trainNumberLabel.textColor = Branding.Colors.DBBlue
+        trainNumberLabel.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
         
         trainNumberTextfield.delegate = self
         trainNumberTextfield.backgroundColor = Branding.Colors.DBGrey
@@ -42,6 +43,7 @@ class InputViewController: UIViewController {
         
         trainStationLabel.text = NSLocalizedString("Train Station", comment: "")
         trainStationLabel.textColor = Branding.Colors.DBBlue
+        trainStationLabel.font = UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)
         
         selectTrainStationButton.setTitle(NSLocalizedString("Please select", comment: ""), for: .normal)
         selectTrainStationButton.setTitleColor(Branding.Colors.DBBlue, for: .normal)
@@ -50,14 +52,18 @@ class InputViewController: UIViewController {
         selectTrainStationButton.layer.borderWidth = 2.0
         selectTrainStationButton.layer.cornerRadius = 19.5
         
-        //TODO: Attributed String
-        reservationNumberLabel.text = NSLocalizedString("Reservation Number (optional)", comment: "")
+        let waggonNumberPrefix = NSAttributedString(string: NSLocalizedString("Waggon Number", comment: ""), attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.bold)])
+        let waggonNumberOptional = NSAttributedString(string: " (optional)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 18.0, weight: UIFont.Weight.light)])
+        
+        let attributedWaggonNumberString = NSMutableAttributedString(attributedString: waggonNumberPrefix)
+        attributedWaggonNumberString.append(waggonNumberOptional)
+        
+        reservationNumberLabel.attributedText = attributedWaggonNumberString
         reservationNumberLabel.textColor = Branding.Colors.DBBlue
         
         reservationNumberTextfield.delegate = self
         reservationNumberTextfield.backgroundColor = Branding.Colors.DBGrey
         reservationNumberTextfield.layer.cornerRadius = 10.0
-
         
         doneButton.setTitle(NSLocalizedString("OK", comment: ""), for: .normal)
         doneButton.layer.borderColor = Branding.Colors.DBBlue.cgColor
