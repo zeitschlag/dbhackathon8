@@ -14,6 +14,8 @@ struct Branding {
     //MARK: - Colors
     struct Colors {
         static let DBBlue = UIColor(red: 10/255, green: 30/255, blue: 110/255, alpha: 1)
+        static let DBGrey = UIColor(red: 225/255, green: 230/255, blue: 235/255, alpha: 1)
         static let White = UIColor.white
     }
+
 }

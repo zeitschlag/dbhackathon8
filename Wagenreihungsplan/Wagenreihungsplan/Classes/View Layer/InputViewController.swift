@@ -33,11 +33,12 @@ class InputViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //TODO: Apply fonts
         trainNumberLabel.text = NSLocalizedString("Train Number", comment: "")
         trainNumberLabel.textColor = Branding.Colors.DBBlue
         
         trainNumberTextfield.delegate = self
+        trainNumberTextfield.backgroundColor = Branding.Colors.DBGrey
+        trainNumberTextfield.layer.cornerRadius = 10.0
         
         trainStationLabel.text = NSLocalizedString("Train Station", comment: "")
         trainStationLabel.textColor = Branding.Colors.DBBlue
@@ -49,12 +50,14 @@ class InputViewController: UIViewController {
         selectTrainStationButton.layer.borderWidth = 2.0
         selectTrainStationButton.layer.cornerRadius = 19.5
         
-        
         //TODO: Attributed String
         reservationNumberLabel.text = NSLocalizedString("Reservation Number (optional)", comment: "")
         reservationNumberLabel.textColor = Branding.Colors.DBBlue
         
         reservationNumberTextfield.delegate = self
+        reservationNumberTextfield.backgroundColor = Branding.Colors.DBGrey
+        reservationNumberTextfield.layer.cornerRadius = 10.0
+
         
         doneButton.setTitle(NSLocalizedString("OK", comment: ""), for: .normal)
         doneButton.layer.borderColor = Branding.Colors.DBBlue.cgColor
@@ -62,6 +65,8 @@ class InputViewController: UIViewController {
         doneButton.layer.cornerRadius = 19.5
         
         doneButton.setTitleColor(Branding.Colors.DBBlue, for: .normal)
+        self.doneButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.bold)
+
     }
     
     //MARK: - Actions

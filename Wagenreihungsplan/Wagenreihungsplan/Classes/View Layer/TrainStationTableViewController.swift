@@ -51,6 +51,7 @@ extension TrainStationTableViewController: UITableViewDataSource {
         
         let station = DataManager.shared.stations[indexPath.row]
         cell.textLabel?.text = station.name
+        cell.tintColor = Branding.Colors.DBBlue
         
         if station == selectedStation {
             cell.accessoryType = .checkmark

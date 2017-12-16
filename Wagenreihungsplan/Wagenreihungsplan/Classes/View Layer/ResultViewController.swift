@@ -29,32 +29,53 @@ class ResultViewController: UIViewController {
         
         //TODO: Set Attributed Labels
         self.prefixLabel.textColor = Branding.Colors.White
-        self.prefixLabel.text = NSLocalizedString("Please go to", comment: "")
+        let prefixLabelString = NSLocalizedString("Please go to", comment: "")
+        self.prefixLabel.attributedText = NSAttributedString(string: prefixLabelString, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 24.0, weight: UIFont.Weight.regular)])
         
-        self.platformLabel.textColor = Branding.Colors.White
+        self.platformLabel.textColor = Branding.Colors.White // 36,48
         if let platform = result.platform {
-            self.platformLabel.text = "Platform \(platform)"
+            let attributedPlatformPrefix = NSAttributedString(string: NSLocalizedString("Platform ", comment: ""), attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 36.0, weight: UIFont.Weight.light)])
+            
+            let attributedPlatformText = NSAttributedString(string: "\(platform)", attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 48.0, weight: UIFont.Weight.bold)])
+            
+            let attributedPlatformLabelText = NSMutableAttributedString(attributedString: attributedPlatformPrefix)
+            attributedPlatformLabelText.append(attributedPlatformText)
+            
+            self.platformLabel.attributedText = attributedPlatformLabelText
+            
         } else {
             self.platformLabel.isHidden = true
         }
         
         self.sectionLabel.textColor = Branding.Colors.White
         
-        var sectionLabelText = "Section "
-        
-        if let sections = result.sections {
+        if let sections = result.sections, sections.count > 0 {
+            
+            var sectionsText = ""
+            var sectionPrefixText = ""
             if sections.count > 1 {
-                sectionLabelText += sections.joined(separator: ", ")
+                sectionPrefixText = NSLocalizedString("Sections ", comment: "")
+                sectionsText = sections.joined(separator: ", ")
             } else if sections.count == 1 {
-                sectionLabelText += sections[0]
+                sectionPrefixText = NSLocalizedString("Section ", comment: "")
+                sectionsText = sections[0]
             }
+            
+            let attributedSectionPrefix = NSAttributedString(string: sectionPrefixText, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 36.0, weight: UIFont.Weight.light)])
+            let attributedSectionsText = NSAttributedString(string: sectionsText, attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 48.0, weight: UIFont.Weight.bold)])
+        
+            let attributedSectionLabelText = NSMutableAttributedString(attributedString: attributedSectionPrefix)
+            attributedSectionLabelText.append(attributedSectionsText)
+            
+            self.sectionLabel.attributedText = attributedSectionLabelText
+            
         } else {
             self.sectionLabel.isHidden = true
         }
-
-        self.sectionLabel.text = sectionLabelText
-        
+     
+        self.closeButton.setTitleColor(Branding.Colors.White, for: .normal)
         self.closeButton.setTitle(NSLocalizedString("Close", comment: ""), for: .normal)
+        self.closeButton.titleLabel?.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.bold)
     }
     
     @IBAction func closeButtonTapped(_ sender: Any) {
