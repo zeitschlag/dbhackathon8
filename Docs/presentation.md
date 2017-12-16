@@ -1,4 +1,6 @@
-## WRP - Wagenreihungsplan
+# WRP 
+
+##Wagenreihungsplan
 
 ### Avoid the Wagenreihungsplan!
 
@@ -14,13 +16,25 @@
 
 ![](reservation.jpg)
 
+---
+
+![](crowd.jpg)
+
+---
+
+![](voller_zug.jpg)
+
 --- 
 
 ![](wagenreihungsplan.jpg)
 
 ---
 
-![fit](crowd.jpg)
+![](crowd.jpg)
+
+---
+
+![fit](navigator.jpg)
 
 ---
 
@@ -28,7 +42,11 @@
 
 ---
 
-![](grandma.jpg)
+![fit](wtf.jpg)
+
+---
+
+![fit](grandma.jpg)
 
 ---
 
@@ -36,11 +54,15 @@
 
 ---
 
+![fit](wtf2.jpg)
+
+---
+
 ## Better Approach
 
 ---
 
-## We made this presentation!
+## We made some slides!
 
 ---
 
@@ -48,6 +70,9 @@
 
 ### We built an app for iPhone.
 ### It changes everything.
+### It even has an icon.
+
+![inline](logo/60 x 60@3x.png)
 
 ---
 
@@ -58,7 +83,7 @@
 ## Main Features
 
 - does its job
-- uses Wagenreihungsplan-data
+- uses coach sequence-data
 - pretty simple
 - works offline
 - escalator-use-approved
