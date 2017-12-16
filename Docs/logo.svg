@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generiert durch Microsoft Visio, SVG Export logo5.svg Page-1 -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events"
+		xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/" width="9.55845in" height="9.55845in"
+		viewBox="0 0 688.209 688.209" xml:space="preserve" color-interpolation-filters="sRGB" class="st8">
+	<v:documentProperties v:langID="1031" v:metric="true" v:viewMarkup="false">
+		<v:userDefs>
+			<v:ud v:nameU="msvNoAutoConnect" v:val="VT0(1):26"/>
+		</v:userDefs>
+	</v:documentProperties>
+
+	<style type="text/css">
+	<![CDATA[
+		.st1 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st2 {fill:#ffffff;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.72}
+		.st3 {fill:none;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.75;visibility:hidden}
+		.st4 {fill:#000000;stroke:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st5 {fill:#000000;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st6 {fill:#0070c0;stroke:#0070c0;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st7 {fill:#ff0000;stroke:#ff0000;stroke-linecap:round;stroke-linejoin:round;stroke-width:0.24}
+		.st8 {fill:none;fill-rule:evenodd;font-size:12px;overflow:visible;stroke-linecap:square;stroke-miterlimit:3}
+	]]>
+	</style>
+
+	<g v:mID="0" v:index="1" v:groupContext="foregroundPage">
+		<title>Zeichenblatt-1</title>
+		<v:pageProperties v:drawingScale="0.0393701" v:pageScale="0.0393701" v:drawingUnits="24" v:shadowOffsetX="8.50394"
+				v:shadowOffsetY="-8.50394"/>
+		<v:layer v:name="Verbinder" v:index="0"/>
+		<g id="shape91-1" v:mID="91" v:groupContext="shape" transform="translate(3.94677,-3.94677)">
+			<title>Feld</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<rect x="0" y="7.89358" width="680.315" height="680.315" class="st1"/>
+		</g>
+		<g id="group60-3" transform="translate(60.6397,-63.3329)" v:mID="60" v:groupContext="group">
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(14):26"/>
+			</v:userDefs>
+			<title>Schienenverkehr</title>
+			<g id="shape61-4" v:mID="61" v:groupContext="shape">
+				<title>Tabelle.61</title>
+				<path d="M510.24 688.21 A56.6929 56.6929 -180 0 0 566.93 631.52 L566.93 177.97 A56.6929 56.6929 -180 0 0 510.24 121.28
+							 L56.69 121.28 A56.6929 56.6929 -180 0 0 0 177.97 L0 631.52 A56.6929 56.6929 -180 0 0 56.69 688.21 L510.24
+							 688.21 Z" class="st2"/>
+			</g>
+			<g id="shape72-6" v:mID="72" v:groupContext="shape" transform="translate(0,32.4346)">
+				<title>Tabelle.72</title>
+				<rect x="0" y="655.774" width="566.929" height="32.4346" class="st3"/>
+			</g>
+		</g>
+		<g id="group85-8" transform="translate(60.6397,-63.3329)" v:mID="85" v:groupContext="group">
+			<title>Tabelle.85</title>
+			<g id="group62-9" transform="translate(136.882,-48.9331)" v:mID="62" v:groupContext="group">
+				<title>Tabelle.62</title>
+				<g id="shape63-10" v:mID="63" v:groupContext="shape" transform="translate(0,-117.266)">
+					<title>Tabelle.63</title>
+					<path d="M58.63 365.73 A58.6329 53.7468 -180 0 0 -0 419.47 L0 634.46 A58.6329 53.7468 -180 0 0 58.63 688.21 L234.53
+								 688.21 A58.6329 53.7468 -180 0 0 293.16 634.46 L293.16 419.47 A58.6329 53.7468 -180 0 0 234.53 365.73
+								 L58.63 365.73 Z" class="st4"/>
+				</g>
+				<g id="shape64-12" v:mID="64" v:groupContext="shape" transform="translate(29.3164,-146.582)">
+					<title>Tabelle.64</title>
+					<path d="M0 662.56 A25.6519 25.6519 0 0 1 51.3 662.56 A25.6519 25.6519 0 1 1 0 662.56 Z" class="st1"/>
+				</g>
+				<g id="shape65-14" v:mID="65" v:groupContext="shape" transform="translate(212.544,-146.582)">
+					<title>Tabelle.65</title>
+					<path d="M0 662.56 A25.6519 25.6519 0 0 1 51.3 662.56 A25.6519 25.6519 0 1 1 0 662.56 Z" class="st1"/>
+				</g>
+				<g id="shape66-16" v:mID="66" v:groupContext="shape" transform="translate(109.937,-395.772)">
+					<title>Tabelle.66</title>
+					<path d="M7.33 658.89 L65.96 658.89 A7.32911 7.32911 0 0 1 73.29 666.22 L73.29 680.88 A7.32911 7.32911 0 0 1
+								 65.96 688.21 L7.33 688.21 A7.32911 7.32911 0 0 1 0 680.88 L0 666.22 A7.32911 7.32911 0 0 1 7.33
+								 658.89 Z" class="st1"/>
+				</g>
+				<g id="shape67-18" v:mID="67" v:groupContext="shape" transform="translate(113.601,-443.411)">
+					<title>Tabelle.67</title>
+					<path d="M0 675.38 A12.8259 12.8259 0 1 1 25.65 675.38 A12.8259 12.8259 0 1 1 0 675.38 Z" class="st4"/>
+				</g>
+				<g id="shape68-20" v:mID="68" v:groupContext="shape" transform="translate(153.911,-443.411)">
+					<title>Tabelle.68</title>
+					<path d="M0 675.38 A12.8259 12.8259 0 1 1 25.65 675.38 A12.8259 12.8259 0 1 1 0 675.38 Z" class="st4"/>
+				</g>
+				<g id="shape69-22" v:mID="69" v:groupContext="shape" transform="translate(29.3164,-278.506)">
+					<title>Tabelle.69</title>
+					<path d="M29.32 585.6 A29.3164 29.3164 -180 0 0 0 614.92 L0 658.89 A29.3164 29.3164 -180 0 0 29.32 688.21 L205.22
+								 688.21 A29.3164 29.3164 -180 0 0 234.53 658.89 L234.53 614.92 A29.3164 29.3164 -180 0 0 205.22 585.6
+								 L29.32 585.6 Z" class="st1"/>
+				</g>
+				<g id="shape70-24" v:mID="70" v:groupContext="shape">
+					<title>Tabelle.70</title>
+					<path d="M73.29 570.94 L0 688.21 L29.32 688.21 L102.61 570.94 L73.29 570.94 ZM219.87 570.94 L293.16 688.21 L263.85
+								 688.21 L190.56 570.94 L219.87 570.94 ZM84.28 600.26 L208.88 600.26 L190.56 570.94 L102.61 570.94
+								 L84.28 600.26 Z" class="st4"/>
+				</g>
+				<g id="shape71-26" v:mID="71" v:groupContext="shape" transform="translate(29.3164,-14.6582)">
+					<title>Tabelle.71</title>
+					<path d="M14.66 666.22 L0 688.21 L234.53 688.21 L219.87 666.22 L14.66 666.22 Z" class="st4"/>
+				</g>
+			</g>
+			<g id="shape22-28" v:mID="22" v:groupContext="shape">
+				<title>Konzentrischer Layer 1</title>
+				<v:userDefs>
+					<v:ud v:nameU="ControlX" v:val="VT0(0.39370078740157):24"/>
+					<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+					<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<path d="M0 404.74 A283.465 283.465 -180 0 0 566.93 404.74 A283.465 283.465 -180 0 0 -0 404.74 ZM28.35 404.74 A255.118
+							 255.118 0 0 1 538.58 404.74 A255.118 255.118 0 0 1 28.35 404.74 Z" class="st5"/>
+			</g>
+		</g>
+		<g id="shape51-30" v:mID="51" v:groupContext="shape" transform="translate(561.42,-41.4481) rotate(32.5) scale(-1,1)">
+			<title>Krummer Pfeil.51</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M-23.84 674.04 A208.053 208.053 -180 0 0 164.42 554.55 L200.24 478.41 L213.06 484.45 L193.45 459.56 L161.76
+						 460.31 L174.59 466.35 L138.77 542.48 A179.706 179.706 0 0 1 -23.84 645.69 L-23.84 674.04 Z" class="st6"/>
+		</g>
+		<g id="shape90-32" v:mID="90" v:groupContext="shape" transform="translate(126.618,-41.4481) rotate(-32.5)">
+			<title>Krummer Pfeil.90</title>
+			<v:userDefs>
+				<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+			</v:userDefs>
+			<path d="M-23.84 674.04 A208.053 208.053 -180 0 0 164.42 554.55 L200.24 478.41 L213.06 484.45 L193.45 459.56 L161.76
+						 460.31 L174.59 466.35 L138.77 542.48 A179.706 179.706 0 0 1 -23.84 645.69 L-23.84 674.04 Z" class="st6"/>
+		</g>
+		<g id="group92-34" transform="translate(301.585,-149.807)" v:mID="92" v:groupContext="group">
+			<title>Tabelle.92</title>
+			<g id="shape55-35" v:mID="55" v:groupContext="shape" transform="translate(-4.79616E-014,-130.058)">
+				<title>Kreis</title>
+				<v:userDefs>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<path d="M0 645.69 A42.5197 42.5197 0 1 1 85.04 645.69 A42.5197 42.5197 0 0 1 0 645.69 Z" class="st7"/>
+			</g>
+			<g id="shape58-37" v:mID="58" v:groupContext="shape" transform="translate(2.13131,1.13687E-013)">
+				<title>Teillayer 3</title>
+				<v:userDefs>
+					<v:ud v:nameU="ControlX" v:val="VT0(0.39370078740157):24"/>
+					<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+					<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<path d="M28.35 688.21 L56.69 688.21 A56.6929 56.6929 -180 0 0 40.09 648.12 L20.04 668.16 A28.3465 28.3465 0 0 1
+							 28.35 688.21 Z" class="st7"/>
+			</g>
+			<g id="shape79-39" v:mID="79" v:groupContext="shape" transform="translate(-418.747,1121.91) rotate(-135)">
+				<title>Teillayer 3.79</title>
+				<v:userDefs>
+					<v:ud v:nameU="ControlX" v:val="VT0(0.39370078740157):24"/>
+					<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+					<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<path d="M28.35 688.21 L56.69 688.21 A56.9463 56.9463 -180 0 0 -0.3 631.52 L-0.15 659.86 A28.4731 28.4731 0 0 1 28.35
+							 688.21 Z" class="st7"/>
+			</g>
+			<g id="shape82-41" v:mID="82" v:groupContext="shape" transform="translate(493.828,89.0883) rotate(45)">
+				<title>Teillayer 3.82</title>
+				<v:userDefs>
+					<v:ud v:nameU="ControlX" v:val="VT0(0.39370078740157):24"/>
+					<v:ud v:nameU="Scale" v:val="VT0(1):26"/>
+					<v:ud v:nameU="AntiScale" v:val="VT0(1):26"/>
+					<v:ud v:nameU="visVersion" v:val="VT0(15):26"/>
+				</v:userDefs>
+				<path d="M28.35 688.21 L56.69 688.21 A56.9463 56.9463 -180 0 0 -0.3 631.52 L-0.15 659.86 A28.4731 28.4731 0 0 1 28.35
+							 688.21 Z" class="st7"/>
+			</g>
+		</g>
+	</g>
+</svg>
