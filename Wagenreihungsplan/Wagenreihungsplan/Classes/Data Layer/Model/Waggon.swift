@@ -12,3 +12,10 @@ struct Waggon {
     var sections: [String]
     var number: Int
 }
+
+extension Waggon: Equatable {    
+    //TODO: Double check this and add an identifier, a UUID, for example?
+    static func ==(lhs: Waggon, rhs: Waggon) -> Bool {
+        return lhs.sections == rhs.sections && lhs.number == rhs.number
+    }
+}

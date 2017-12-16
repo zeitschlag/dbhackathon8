@@ -15,3 +15,11 @@ struct Station {
     var tracks: [Track]
     
 }
+
+extension Station: Equatable {
+    //TODO: Double check this and add an identifier, a UUID, for example?
+    static func ==(lhs: Station, rhs: Station) -> Bool {
+        return lhs.shortCode == rhs.shortCode && lhs.name == rhs.name && lhs.tracks == rhs.tracks
+    }
+    
+}

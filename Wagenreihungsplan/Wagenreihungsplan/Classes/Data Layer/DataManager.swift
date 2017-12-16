@@ -9,18 +9,17 @@
 import Foundation
 import SWXMLHash
 
-struct DataManager {
+class DataManager {
     var stations: [Station]
+    
+    static let shared = DataManager()
     
     init() {
         self.stations = [Station]()
     }
     
-    mutating func readStationData() {
-        // get list of files
-        // read every file
-        // create stations, tracks, trains, waggons...
-        
+    func readStationData() {
+       
         guard let listOfStationFiles = self.listOfStationFiles() else {
             fatalError("Check filepaths")
         }
@@ -83,7 +82,6 @@ struct DataManager {
                                 }
                             }
 
-                            
                             var tmpSubtrains = [Subtrain]()
                             let subtrains = train["subtrains"].children.enumerated()
                             
@@ -122,7 +120,42 @@ struct DataManager {
 
     }
     
-    func listOfStationFiles() -> [URL]? {
+    func getResult(withStation station: Station, trainNumber: Int, waggonNumber: Int?) -> Result? {
+        
+        guard let tracks = self.tracksForStation(station) else { return nil}
+        
+        for track in tracks {
+            for train in track.trains {
+                if let waggonNumber = waggonNumber {
+                    for waggon in train.waggons where waggon.number == waggonNumber {
+                        var result = Result()
+                        result.platform = track.number
+                        result.sections = waggon.sections
+                        return result
+                    }
+                } else {
+                    for subtrain in train.subtrains where subtrain.trainNumber == trainNumber {
+                        var result = Result()
+                        result.platform = track.number
+                        result.sections = subtrain.sections
+                        return result
+                    }
+                }
+            }
+        }
+        
+        return nil
+    }
+    
+    func tracksForStation(_ station: Station) -> [Track]? {
+        guard let filteredStation = (self.stations.filter { (s) -> Bool in
+            return s == station
+        }).first else { return nil }
+        
+        return filteredStation.tracks
+    }
+    
+    private func listOfStationFiles() -> [URL]? {
         return Bundle.main.urls(forResourcesWithExtension: "xml", subdirectory: nil)
     }
 }

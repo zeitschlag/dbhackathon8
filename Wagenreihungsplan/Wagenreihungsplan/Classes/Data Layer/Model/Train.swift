@@ -12,3 +12,10 @@ struct Train {
     var subtrains: [Subtrain]
     var waggons: [Waggon]
 }
+
+extension Train: Equatable {
+    //TODO: Double check this and add an identifier, a UUID, for example?
+    static func ==(lhs: Train, rhs: Train) -> Bool {
+        return lhs.subtrains == rhs.subtrains && lhs.waggons == rhs.waggons
+    }
+}

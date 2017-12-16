@@ -13,3 +13,12 @@ struct Track {
     var number: Int
     var trains: [Train]
 }
+
+extension Track: Equatable {
+    //TODO: Double check this and add an identifier, a UUID, for example?
+    static func ==(lhs: Track, rhs: Track) -> Bool {
+        return lhs.name == rhs.name && lhs.number == rhs.number && lhs.trains == rhs.trains
+    }
+    
+    
+}
