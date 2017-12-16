@@ -9,8 +9,6 @@
 import Foundation
 
 struct Train {
-    var trainNumbers: [Int]
-    var sections: [String]
+    var subtrains: [Subtrain]
     var waggons: [Waggon]
-    var trainTypes: [String]
 }

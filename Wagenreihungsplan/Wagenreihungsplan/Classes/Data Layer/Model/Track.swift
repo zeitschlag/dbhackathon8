@@ -12,5 +12,4 @@ struct Track {
     var name: String
     var number: Int
     var trains: [Train]
-    var sections: [String]
 }
