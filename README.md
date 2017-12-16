@@ -1,7 +1,6 @@
 # WRP - Wagenreihungsplan
 
-![Input](Input.png)
-![Result](Result.png)
+![Demo](Demo.png)
 
 - A [dbhackathon8-project](https://dbmindbox.com/en/db-opendata-hackathons/hackathons/hackathon-8-db-open-data/)
 - native mobile application for iPhone (and iPad, maybe.)
